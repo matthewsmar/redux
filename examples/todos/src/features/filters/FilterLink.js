@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
-import { setVisibilityFilter } from '../features/todos/filtersSlice';
-import Link from '../components/Link';
+import { setVisibilityFilter } from './filtersSlice.js';
+import Link from './Link.js';
 
 const mapStateToProps = (state, ownProps) => ({
   active: ownProps.filter === state.visibilityFilter

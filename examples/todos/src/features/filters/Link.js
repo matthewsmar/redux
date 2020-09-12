@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import {setVisibilityFilter} from '../features/todos/filtersSlice';
 
 const Link = ({ active, children, setVisibilityFilter, filter }) => (
     <button

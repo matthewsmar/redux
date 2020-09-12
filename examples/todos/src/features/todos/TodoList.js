@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Todo from './Todo'
+import Todo from './Todo.js'
 
 const TodoList = ({ todos, toggleTodo }) => (
   <ul>
@@ -8,7 +8,7 @@ const TodoList = ({ todos, toggleTodo }) => (
       <Todo
         key={todo.id}
         {...todo}
-        onClick={() => toggleTodo(todo.id)}
+        onClick={() => toggleTodo(todo)}
       />
     )}
   </ul>
